@@ -1,0 +1,10 @@
+@import 'tailwindcss';
+@import "@fontsource/montserrat";
+@theme {
+    --font-primary: 'Montserrat', 'sans-serif';
+	--color-light: #fefae0;
+	--color-green1: #283618;
+	--color-green2: #606c38;
+	--color-brown1: #bc6c25;
+	--color-brown2: #dda15e;
+}
