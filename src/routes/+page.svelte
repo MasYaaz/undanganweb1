@@ -447,7 +447,7 @@
 				<div class="mb-6 text-center">
 					<h2 class="font-cinzeldeco text-7xl font-bold text-pink-700 lg:text-8xl">rsvp</h2>
 					<p class="font-poppins text-[12px] text-black lg:text-base">
-						Silahkan konfirmasi kehadiran anda disi.
+						Silahkan isi konfirmasi kehadiran anda.
 					</p>
 				</div>
 
@@ -470,9 +470,8 @@
 					</div>
 					<!-- Input Kehadiran -->
 					<div>
-						<label for="pertanyaan" class="mb-2 block text-sm font-medium text-gray-700"
-							>Apakah Anda akan hadir?</label
-						>
+						<p class="mb-2 block text-sm font-medium text-gray-700"
+							>Apakah Anda akan hadir?</p>
 						<div class="flex items-center space-x-6">
 							<label class="inline-flex items-center">
 								<input
@@ -511,7 +510,7 @@
 					</div>
 					<!-- Input Pesan dan Doa -->
 					<div>
-						<label for="pesan" class="block text-sm font-medium text-gray-700">Ucapan / Doa</label>
+						<label for="Ucapan / Doa" class="block text-sm font-medium text-gray-700">Ucapan / Doa</label>
 						<textarea
 							id="Ucapan / Doa"
 							name="Ucapan / Doa"
