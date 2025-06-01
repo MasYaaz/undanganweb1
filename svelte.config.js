@@ -6,7 +6,8 @@ export default {
 		adapter: adapter({
 			pages: 'build',
 			assets: 'build',
-			fallback: 'index.html'
+			fallback: null,
+			strict: false
 		}),
 		paths: {
 			base: '/undanganweb1' // Ganti dengan nama repo GitHub kamu
