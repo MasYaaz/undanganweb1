@@ -1,18 +1,17 @@
 import adapter from '@sveltejs/adapter-static';
+const dev = process.env.NODE_ENV === 'development';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 export default {
 	kit: {
-		adapter: adapter({
-			pages: 'build',
-			assets: 'build',
-			fallback: null,
-			strict: false
-		}),
-		paths: {
-			base: '/undanganweb1' // Ganti dengan nama repo GitHub kamu
-		}
-	}
+    adapter: adapter(),
+    paths: {
+      base: dev ? '' : '/undanganweb1', // ganti dengan nama repo GitHub Anda
+    },
+    prerender: {
+      entries: ['*']
+    }
+  }
 };
 
 /** @type {import('@sveltejs/kit').Config} */
