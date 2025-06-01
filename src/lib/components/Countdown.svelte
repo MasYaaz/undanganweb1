@@ -24,9 +24,22 @@
 </script>
 
 <!-- Tampilan countdown -->
-<div class="text-lg md:text-2xl">
-  <span>{timeLeft.days} hari</span> :
-  <span>{timeLeft.hours} jam</span> :
-  <span>{timeLeft.minutes} menit</span> :
-  <span>{timeLeft.seconds} detik</span>
+<div class="flex gap-1 lg:gap-3 justify-center">
+  <!-- kotak Countdown -->
+  <div class="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-white items-center justify-center flex flex-col" >
+    <span class="font-primary text-2xl md:text-3xl font-bold">{timeLeft.days}</span>
+    <span class="text-xs font-bold font-primary uppercase">Hari</span>
+  </div>
+  <div class="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-white items-center justify-center flex flex-col" >
+    <span class="font-primary text-2xl md:text-3xl font-bold">{timeLeft.hours}</span>
+    <span class="text-xs font-bold font-primary uppercase">jam</span>
+  </div>
+  <div class="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-white items-center justify-center flex flex-col" >
+    <span class="font-primary text-2xl md:text-3xl font-bold">{timeLeft.minutes}</span>
+    <span class="text-xs font-bold font-primary uppercase">menit</span>
+  </div>
+  <div class="h-16 w-16 md:h-20 md:w-20 rounded-2xl bg-white items-center justify-center flex flex-col" >
+    <span class="font-primary text-2xl md:text-3xl font-bold">{timeLeft.seconds}</span>
+    <span class="text-xs font-bold font-primary uppercase">detik</span>
+  </div>
 </div>
