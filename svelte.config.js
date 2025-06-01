@@ -1,21 +1,6 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-
-const repoName = 'undanganweb1'; // Ganti ini
-
-export default {
-  kit: {
-    adapter: adapter(),
-    paths: {
-      base: `/${repoName}`, // penting untuk GitHub Pages
-    },
-    prerender: {
-      default: true
-    }
-  }
-};
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
@@ -29,3 +14,5 @@ const config = {
 		adapter: adapter()
 	}
 };
+
+export default config;
