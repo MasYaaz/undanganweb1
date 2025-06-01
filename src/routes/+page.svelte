@@ -395,7 +395,7 @@
 		<!-- SECTION 5 -->
 		<section
 			id="section5"
-			class="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-pink-100 to-pink-50 py-16"
+			class="flex min-h-screen flex-col items-center justify-center py-16"
 			on:touchstart={handleTouchStart}
 			on:touchend={handleTouchEnd}
 		>
