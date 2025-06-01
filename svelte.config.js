@@ -15,4 +15,16 @@ const config = {
 	}
 };
 
-export default config;
+
+export default {
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: null
+		}),
+		paths: {
+			base: '/undanganweb1' // Ganti dengan nama repo GitHub kamu
+		}
+	}
+};
