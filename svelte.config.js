@@ -1,15 +1,17 @@
 import adapter from '@sveltejs/adapter-static';
-const dev = process.env.NODE_ENV === 'development';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
+
+const repoName = 'undanganweb1'; // Ganti ini
+
 export default {
-	kit: {
+  kit: {
     adapter: adapter(),
     paths: {
-      base: dev ? '' : '/undanganweb1', // ganti dengan nama repo GitHub Anda
+      base: `/${repoName}`, // penting untuk GitHub Pages
     },
     prerender: {
-      entries: ['*']
+      default: true
     }
   }
 };
