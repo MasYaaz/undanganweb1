@@ -8,6 +8,7 @@
 	import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
 	import { faCalendarAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 	import Flipcard from '$lib/components/Flipcard.svelte';
+	export const prerender = true;
 
 	let targetSection: HTMLDivElement;
 	let hasEntered = false; // Variabel untuk menunjukkan halaman utama
