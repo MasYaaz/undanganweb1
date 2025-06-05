@@ -8,7 +8,6 @@
 	import { faEnvelopeOpen } from '@fortawesome/free-regular-svg-icons';
 	import { faCalendarAlt, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 	import Flipcard from '$lib/components/Flipcard.svelte';
-	export const prerender = true
 
 	let targetSection: HTMLDivElement;
 	let hasEntered = false; // Variabel untuk menunjukkan halaman utama
@@ -17,13 +16,14 @@
 
 	let activeSection = 'section2';
 	const sections = ['section2', 'section3', 'section4', 'section5'];
+	
 
 	export let images: string[] = [
-		'/images/galeri/foto1.jpg',
-		'/images/galeri/foto2.jpg',
-		'/images/galeri/foto3.jpg',
-		'/images/galeri/foto4.jpg',
-		'/images/galeri/foto5.jpg'
+		'images/galeri/foto1.jpg',
+		'images/galeri/foto2.jpg',
+		'images/galeri/foto3.jpg',
+		'images/galeri/foto4.jpg',
+		'images/galeri/foto5.jpg'
 	];
 
 	let activeIndex = 0;
@@ -88,8 +88,7 @@
 		},
 		{
 			judulCinzel: 'Resepsi nikah',
-			srcImage:
-				'https://img.icons8.com/external-glyphons-amoghdesign/256/external-celebrate-st-patricks-day-glyphons-amoghdesign.png',
+			srcImage:'https://img.icons8.com/external-glyphons-amoghdesign/256/external-celebrate-st-patricks-day-glyphons-amoghdesign.png',
 			hari: 'Sabtu',
 			tanggal: '15 Juni 2025',
 			waktu: '20.00 - Selesai',
@@ -187,7 +186,7 @@
 	<section
 		id="section1"
 		class="section-hero fixed inset-0 z-50 flex flex-col items-center justify-center bg-cover bg-center px-4 text-center transition-transform duration-1000 ease-in-out"
-		style="background-image: url('/images/back1.jpg')"
+		style="background-image: url('images/back1.jpg')"
 		class:hidden-slide={hasEntered}
 	>
 		<!-- Overlay semi-transparan -->
@@ -210,7 +209,7 @@
 				& aishaH
 			</h2>
 
-			<img src="/images/place1.png" alt="ornamen dekorasi" class="mb-50 h-auto w-60 md:w-150" />
+			<img src="images/place1.png" alt="ornamen dekorasi" class="mb-50 h-auto w-60 md:w-150" />
 
 			<!-- Tombol -->
 			<button
@@ -231,7 +230,7 @@
 	<!-- Section 2 dan 3 -->
 	<div
 		class="relative"
-		style="background-image: url('/images/back2.jpg'); background-size: cover; background-position: center;"
+		style="background-image: url('images/back2.jpg'); background-size: cover; background-position: center;"
 	>
 		<!-- Overlay semi-transparan -->
 		<div
@@ -278,7 +277,7 @@
 					"Terima kasih telah mau menjadi bagian di hari bahagia kami"
 				</p>
 
-				<img src="/images/place1.png" alt="Foto estetik" class="h-fit w-60 object-cover md:w-150" />
+				<img src="images/place1.png" alt="Foto estetik" class="h-fit w-60 object-cover md:w-150" />
 			</div>
 		</section>
 
@@ -345,7 +344,7 @@
 	<!-- Section 4 sampai 6 -->
 	<div
 		class="relative"
-		style="background-image: url('/images/back2.jpg'); background-size: cover; background-position: center;"
+		style="background-image: url('images/back2.jpg'); background-size: cover; background-position: center;"
 	>
 		<!-- Overlay semi-transparan -->
 		<div
