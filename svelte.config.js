@@ -7,7 +7,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		paths: {
-			base: '/undanganweb1'
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
 		}
 	}
 };
